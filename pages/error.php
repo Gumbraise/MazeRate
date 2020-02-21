@@ -1,4 +1,5 @@
-<!DOCTYPE html>
+<?php
+echo '<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -9,4 +10,4 @@
     <link rel="stylesheet" href="css/animate.css" type="text/css">
     <script src="https://kit.fontawesome.com/b4a5739101.js"></script>
     <title>MazeRate | Error</title>
-</head>
+</head>';

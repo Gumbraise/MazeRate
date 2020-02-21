@@ -27,10 +27,10 @@ if(isset($_POST['login'])){
                         header("Location: ../index.php");
                   }
             } else {
-                  header("Location: register.php?e=You don't have an account!");
+                  header("Location: register.php");
             }
       } else {
-            header("Location: login.php?e=Some areas are empty!");
+            header("Location: login.php");
       }
 } else { 
       header("Location: ../login.php"); 

@@ -1,6 +1,7 @@
+<?php
+echo '
 <body>
-    <div class="hidden"></div>
-    <?php
+    <div class="hidden"></div>';
     session_start();
     $bdd = new PDO('mysql:host=localhost;dbname=mazerate', 'root', '');
     
@@ -8,26 +9,23 @@
         if(isset($_GET['id'])){
             switch ($_GET['id']) {
                 case 1 :
-                    echo "<div class='middle'><p class='error'><font class='texterror'>You already have an account, please login</font></p></div>";
+                    include("pages/errors/".$_GET['id'].".php");
                     break;
                 case 2 :
-                    echo "<div class='middle'><p class='error'><font class='texterror'>There are blanks. Re-test</font></p></div>";
+                    include("pages/errors/".$_GET['id'].".php");
                     break;
                 case 3:
-                    echo "<div class='middle'><p class='error'><font class='texterror'>There are blanks. Re-test</font></p></div>";
-                    break;
-                case 4:
-                    echo "<div class='middle'><p class='error'><font class='texterror'>You're actually not connected to this service</font></p></div>";
+                    include("pages/errors/".$_GET['id'].".php");
                     break;
                 default:
-                    echo "<div class='error'><p class='error'>404<br><br><font class='texterror'>There is nothing here :/</font></p></div>";
+                    include("pages/errors/404.php");
                     break;
             }
         }
         else
         {
-            echo "<div class='error'><p class='error'>404<br><br><font class='texterror'>There is nothing here :/</font></p></div>";
+            include("pages/errors/404.php");
         }
-    ?>
+echo '
 </body>
-</html>
+</html>';

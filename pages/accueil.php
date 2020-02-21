@@ -22,7 +22,7 @@
                     </form>
                 </div>
                 <div class="cgu">
-                    <p class="cgu">We hope you going to enjoy the new version of social networks. Rate your friends every days with this app. <br><br>This application and website was created by STI members: Kellis LE LOUËR, Titouan FICET, Mathéo DUHAMEL and Quentin GARAUD.</p>
+                    <p class="cgu">We hope you going to enjoy the new version of social networks. Rate your friends every days with this app. <br><br>This application and website was created by Kellis LE LOUËR aka. Gumbraise.</p>
                 </div>
                 <br>
                 <br>
